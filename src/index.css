@@ -25,8 +25,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url('./img/kofe.jpg'); */
-  background-repeat: no-repeat;
+
+  /* height: 900px; */
+  /* background-size: 100% 150%; */
   box-sizing: border-box;
+  background: linear-gradient(to left, #c9d6ff, #e2e2e2);
+  background-repeat: round;
+  /* background: content-box radial-gradient(crimson, skyblue); */
+  /* background-color: #895438; */
 }
 
 img {
