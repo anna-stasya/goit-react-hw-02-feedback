@@ -1,0 +1,82 @@
+.customBtn {
+  display: flex;
+  margin: 50px;
+
+  align-content: center;
+  /* display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.btn {
+  display: flex;
+  display: inline-block;
+
+  /* margin-left: 45px; */
+  align-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn:nth-child(1) {
+  background-color: #137708;
+  border: 1px solid #137708;
+}
+
+.btn:nth-child(2) {
+  background-color: #d47c09;
+  border: 1px solid #d47c09;
+}
+
+.btn:nth-child(3) {
+  background-color: #d40902;
+  border: 1px solid #d40902;
+}
+.btn:not(:first-child) {
+  margin-left: 25px;
+}
+
+.btn:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px rgba(0, 0, 0, 0.6), -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px rgba(0, 0, 0, 0.133), 4px 4px 5px 0px rgba(0, 0, 0, 0.067);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn:active {
+  top: 2px;
+}
