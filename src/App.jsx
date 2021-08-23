@@ -1,13 +1,14 @@
 import React from 'react';
 //components
+import { Container } from './components/container/Container';
 import { Feedback } from './components/Feedback/Feedback';
-
+//css
 import s from 'components/container/Container.module.css';
 
 export default function App() {
   return (
-    <div className={s.container}>
+    <Container className={s.container}>
       <Feedback />
-    </div>
+    </Container>
   );
 }

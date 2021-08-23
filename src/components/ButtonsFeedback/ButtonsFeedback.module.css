@@ -1,21 +1,12 @@
 .customBtn {
-  display: flex;
   margin: 50px;
-
-  align-content: center;
-  /* display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .btn {
-  display: flex;
   display: inline-block;
-
-  /* margin-left: 45px; */
   align-content: center;
   align-items: center;
-  width: 130px;
+  min-width: 130px;
   height: 40px;
   border: none;
   color: #fff;

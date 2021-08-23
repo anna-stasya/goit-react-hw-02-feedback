@@ -11,10 +11,32 @@
 .list {
   display: flex;
   flex-direction: column;
-  font-size: 19px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
+  list-style-type: none;
+}
+.item {
+  color: #2e2d2d;
 }
 
 .item:not(:first-child) {
   margin-top: 15px;
+}
+
+.item:nth-child(1) {
+  color: #035517;
+}
+
+.item:nth-child(2) {
+  color: #657a04;
+}
+
+.item:nth-child(3) {
+  color: #7a0404;
+}
+
+.item:last-child {
+  font-weight: bold;
+  color: #030c55;
 }
