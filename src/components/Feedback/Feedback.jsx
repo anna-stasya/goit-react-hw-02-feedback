@@ -71,7 +71,7 @@ Feedback.propTypes = {
   Neutral: PropTypes.number,
   Bad: PropTypes.number,
   total: PropTypes.number,
-  positivePercentage: PropTypes.number,
+  positiveFeedback: PropTypes.number,
 };
 
 export { Feedback };
