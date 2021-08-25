@@ -13,18 +13,18 @@ class Feedback extends React.Component {
   };
 
   state = {
-    Good: 0,
-    Neutral: 0,
-    Bad: 0,
+    good: 0,
+    neutral: 0,
+    bad: 0,
   };
 
   countTotalFeedback = () => {
-    const { Good, Neutral, Bad } = this.state;
-    return Good + Neutral + Bad;
+    const { good, neutral, bad } = this.state;
+    return good + neutral + bad;
   };
 
   countPositiveFeedbackPercentage = () => {
-    return Math.round((this.state.Good * 100) / this.countTotalFeedback()) || 0;
+    return Math.round((this.state.good * 100) / this.countTotalFeedback()) || 0;
   };
 
   leaveFeedback = option => {
@@ -34,7 +34,7 @@ class Feedback extends React.Component {
   };
 
   render() {
-    const { Good, Neutral, Bad } = this.state;
+    const { good, neutral, bad } = this.state;
     const totalFeedback = this.countTotalFeedback();
     const positiveFeedbackPercentage = this.countPositiveFeedbackPercentage();
 
@@ -53,9 +53,9 @@ class Feedback extends React.Component {
             <Notification message="No feedback given" />
           ) : (
             <Statistics
-              good={Good}
-              neutral={Neutral}
-              bad={Bad}
+              good={good}
+              neutral={neutral}
+              bad={bad}
               total={totalFeedback}
               positiveFeedback={positiveFeedbackPercentage}
             />
